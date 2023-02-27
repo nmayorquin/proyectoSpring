@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html xmlns:th="https://www.thymeleaf.org/"> 
+<head> 
+    <meta charset="UTF-8" /> 
+
+   
+    <title th:text="${tituloPagina}">Papelería Prisma</title>
+    
+</head>
+
+<body>
+	 <header>
+        <section class="caja_header">
+            <nav>
+                <!--para paneles de navegación se usa la etiqueta nav....dede html5-->
+                <ul>
+                    <a>
+                        <li>HOME</li>
+                    </a>
+                    <a>
+                        <li>PRODUCTOS</li>
+                    </a>
+                    <a>
+                        <li>CONTACTO</li>
+                    </a>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    
+    <main>
+		<section>
+			<img th:src="@{/images/prisma.png}"></img>
+		</section>
+		
+		<section>
+			 <h2 class="titulos">Sobre papelería Prisma</h2> 
+            
+            <div class="textoBarberiaMision">
+                <img th:src="@{/images/prisma.png}"></img>
+                <p>Estamos en la localidad de Suba
+                     <strong>Papelería Prisma</strong>  trae para el mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes diariamente. </p> 
+                <p id="mision"><em>Nuestra misión es: <strong>"Proporcionar autoestima y calidad de vida a nuestros clientes".</strong> </em> </p> <!-- etiqueta em para marcar texto en italico: emphasis EN HTML SE HEREDAN EN CASCADA LOS DISEÑOS DE TODO LO QUE LO CONTIENE-->
+                <p>Ofrecemos profesionales experimentados que están constantemente observando los cambios y movimiento en el mundo de la moda, para así ofrecer a nuestros clientes las últimas tendencias. El atendimiento posee un padrón de excelencia y agilidad, garantizando calidad y satisfacción de nuestros clientes. </p>
+            </div>
+		</section>
+		
+		<section>
+			<h2 class="titulos">Productos</h2> 
+            	<div class="textoBarberiaMision">
+                	<img th:src="@{/images/prisma.png}"></img>
+           		</div>
+		</section>
+		
+		<section>
+			<h2 class="titulos">Trabajos y manualidades</h2> 
+            	<div class="textoBarberiaMision">
+                	<img th:src="@{/images/prisma.png}"></img>
+           		</div>
+		</section>
+		
+	</main>
+	
+</body>

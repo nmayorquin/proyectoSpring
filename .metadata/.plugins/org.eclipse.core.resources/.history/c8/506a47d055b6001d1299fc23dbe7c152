@@ -1,0 +1,34 @@
+<!DOCTYPE html> 
+<html xmlns:th="https://www.thymeleaf.org/"> 
+<head> 
+    <meta charset="UTF-8" /> 
+
+   
+    <title th:text="${tituloPagina}">Papelería Prisma</title>
+    
+</head>
+
+<body>
+	 <header>
+        <section class="caja_header">
+            <nav>
+                <!--para paneles de navegación se usa la etiqueta nav....dede html5-->
+                <ul>
+                    <a>
+                        <li>HOME</li>
+                    </a>
+                    <a>
+                        <li>PRODUCTOS</li>
+                    </a>
+                    <a>
+                        <li>CONTACTO</li>
+                    </a>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    
+	<section>
+		<img th:src="@{/images/prisma.png}"></img>
+	</section>
+</body>

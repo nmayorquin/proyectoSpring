@@ -1,0 +1,5 @@
+package com.papeleriaprisma.springboot.web.app.controllers;
+
+public class HomeController {
+
+}

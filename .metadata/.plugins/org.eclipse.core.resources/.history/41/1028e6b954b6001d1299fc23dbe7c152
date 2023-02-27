@@ -1,0 +1,15 @@
+<!DOCTYPE html> 
+<html xmlns:th="https://www.thymeleaf.org/"> 
+<head> 
+    <meta charset="UTF-8" /> 
+
+   
+    <title th:text="${tituloPagina}">Papelería Prisma</title>
+    
+</head>
+
+<body>
+	<section>
+		<img th:src="@{/images/spring.png}"></img>
+	</section>
+</body>

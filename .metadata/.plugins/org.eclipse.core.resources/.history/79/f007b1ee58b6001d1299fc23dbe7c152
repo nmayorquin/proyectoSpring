@@ -1,0 +1,22 @@
+package com.papeleriaprisma.springboot.web.app.models;
+
+import java.io.Serializable;
+
+
+
+import jakarta.persistence.Entity; //SE DEBE IMPORTAR DE JAVX PERO NO SALÍA
+import jakarta.persistence.Table;
+
+
+
+//CLASE MODELS CON ENTITY PORQUE SERÁ LA CLASE QUE SE MAPEE A TABLA DE H2
+
+@Entity
+@Table( name = "clientes")
+public class Formulario implements Serializable{
+	
+	
+
+	private static final long serialVersionUID = 1L;
+	
+}
