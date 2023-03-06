@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html xmlns:th="https://www.thymeleaf.org/"> 
+<head> 
+    <meta charset="UTF-8" /> 
+
+   
+    <title th:text="${tituloPagina}"></title>
+    
+</head>
+
+<body>
+	<h2th:text="${tituloBody}"> </h2th:text="${tituloBody}">
+	
+	<!--FORMULARIO PARA INGRESAR PRODUCTOS-->
+	<section>
+		
+		
+	</section>
+	
+	<!--TABLA PARA MOSTRAR LOS PRODUCTOS-->
+	<section>
+		<table>
+			<thead>
+				<tr>
+					<th>ID PRODUCTO</th>
+					<th>NOMBRE PRODUCTO</th>
+					<th>DESCRIPCIÓN</th>
+					<th>VALOR</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr th:each="Productos: ${productos}"> </tr>
+		<!--			<td th:text="${productos.IdProducto}"> </td>
+					<td th:text="${productos.nombreProducto}"> </td> 
+					<td th:text="${productos.DescripcionProducto}"> </td>
+					<td th:text="${productos.valorProducto}"> </td>-->
+					
+					
+				
+			</tbody>
+		</table>
+		
+	</section>
+	
+	
+	
+	
+	
+</body>
